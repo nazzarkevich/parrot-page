@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <title>Find Parrot</title>
 </head>
 <body>
@@ -113,24 +115,83 @@
           <h2>Testimonials</h2>
           <p>What our customers told about us</p>
         </div>
-        <div class="feedback-box">
-          <img src="./img/customer-img-1.png" alt="">
-          <p>
-              I have been incredibly impressed with LinkUp team of developers. They worked hard to 
-              deliver the highest-quality product possible and exceeded my expectations at every step 
-              of the way. I initially found Andriy in search of a better price than what I could find 
-              locally with other development firms. But what I found - in addition to a better price - 
-              was a much higher-quality product as well, in every way: service, design, development, 
-              communications...etc. 5+++ Stars work. Great job.
-          </p>
-          <h4 class="customer-name">John Kamman</h4>
-          <h4 class="customer-company">Wholesum Founder</h4>
-        </div>
+        <!-- <div class="feedback-box-wrap"> -->
+
+          <div class="feedback-box">
+            <img src="./img/customer-img-1.png" alt="">
+            <p>
+                I have been incredibly impressed with LinkUp team of developers. They worked hard to 
+                deliver the highest-quality product possible and exceeded my expectations at every step 
+                of the way. I initially found Andriy in search of a better price than what I could find 
+                locally with other development firms. But what I found - in addition to a better price - 
+                was a much higher-quality product as well, in every way: service, design, development, 
+                communications...etc. 5+++ Stars work. Great job.
+            </p>
+            <h4 class="customer-name">John Kamman</h4>
+            <h4 class="customer-company">Wholesum Founder</h4>
+          </div>
+  
+          <!-- <div class="feedback-box">
+              <img src="./img/customer-img-1.png" alt="">
+              <p>
+                  I have been incredibly impressed with LinkUp team of developers. They worked hard to 
+                  deliver the highest-quality product possible and exceeded my expectations at every step 
+                  of the way. I initially found Andriy in search of a better price than what I could find 
+                  locally with other development firms. But what I found - in addition to a better price - 
+                  was a much higher-quality product as well, in every way: service, design, development, 
+                  communications...etc. 5+++ Stars work. Great job.
+              </p>
+              <h4 class="customer-name">John Kamman</h4>
+              <h4 class="customer-company">Wholesum Founder</h4>
+          </div>
+  
+          <div class="feedback-box">
+              <img src="./img/customer-img-1.png" alt="">
+              <p>
+                  I have been incredibly impressed with LinkUp team of developers. They worked hard to 
+                  deliver the highest-quality product possible and exceeded my expectations at every step 
+                  of the way. I initially found Andriy in search of a better price than what I could find 
+                  locally with other development firms. But what I found - in addition to a better price - 
+                  was a much higher-quality product as well, in every way: service, design, development, 
+                  communications...etc. 5+++ Stars work. Great job.
+              </p>
+              <h4 class="customer-name">John Kamman</h4>
+              <h4 class="customer-company">Wholesum Founder</h4>
+          </div> -->
+        <!-- </div> -->
+
         <div class="left-arrow">
             <i class="fas fa-long-arrow-alt-left"></i>
         </div>
         <div class="right-arrow">
             <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-form">
+      <div class="feedback-form-wrap grid-content">
+        <div class="text-center-wrap feedback-form-title">
+            <h2>Contact Us</h2>
+            <p>We would be happy to answer your questions</p>
+        </div>
+        <div class="form-wrap">
+          <form>
+            <div class="form-items">
+              <input type="email" name="email" required>              
+              <label for="email"> Email</label>
+            </div>
+            <div class="form-items">
+              <input type="text" name="name" required>              
+              <label for="name"> Name</label>
+            </div>
+            <div class="form-items">
+              <input class="file-input" id="file-input" type="file" hidden="hidden" accept="image/gif, image/jpeg, image/png">
+              <label for="file-input">Choose file</label>
+              <img src="#" alt="img" id="image-hidden" style="display: none">
+              <button type="submit" class="form-btn"><i class="fab fa-telegram-plane"></i></button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -166,6 +227,9 @@
       </div>
     </footer>
   </div>
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>    
 </body>
 </html>

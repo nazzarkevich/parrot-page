@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
   padding: 0;
 	margin: 0;
@@ -84,6 +87,7 @@ body {
 .search-wrapper {
 	grid-column: 4 / 10;
 	grid-row: 3;
+	text-align: center;
 }
 
 .header-text {
@@ -230,6 +234,10 @@ img {
 	color: #fff;
 }
 
+.feedback-box-wrap {
+	grid-column: 4 / 11;
+}
+
 .feedback-box {
 	grid-column: 4 / 10;
 	grid-row: 3 / 3;
@@ -272,6 +280,132 @@ img {
 	font-weight: 100;
 	margin-top: 0;
 
+}
+
+/* Feedback form section */
+.feedback-form {
+	grid-column: 1 / 13;
+}
+
+.form-wrap {
+	grid-row: 2 /2;
+	grid-column: 5 / 9;
+	width: 100%
+}
+
+.form-wrap p {
+	margin: 0;
+}
+
+.form-wrap form {
+	display: block;
+	position: relative;
+	padding: 30px;
+}
+
+.form-wrap form label {
+	display: block;
+	position: relative;
+	font-size: 16px;
+	top: -20px;
+	left: 0px;
+	z-index: 1;
+	transition: all 0.3s ease;
+}
+
+.form-wrap input {
+	display: block;
+	position: relative;
+	border: none;
+	background: none;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	font-weight: bold;
+	font-size: 16px;
+	z-index: 2;
+}
+
+.form-wrap input:focus, .form-wrap input:valid {
+	outline: none;
+	border-bottom: 1px solid #0b7d8f;
+}
+
+.form-wrap input:focus + label, .form-wrap input:valid + label {
+	top: -40px;
+	font-size: 12px;
+	color: #0b7d8f;
+}
+
+.feedback-form-wrap {
+	grid-template-rows: repeat(2, minmax(50px, auto));
+}
+
+.file-input {
+	border-bottom: none !important;
+}
+
+.btn-upload {
+	border: none;
+	color: #fff;
+	background: #4dadbb;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.btn-upload:hover {
+	background: #0b7d8f
+}
+
+input[type=file] {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+	opacity: 0;
+}
+
+label[for=file-input] {
+	background: #0b7d8f;
+	padding: 5px;
+	border-radius: 5px;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	color: #fff !important;
+	margin: 0 auto;
+}
+
+label[for=file-input]:hover {
+	background: #0d9aaf;
+}
+
+.form-items {
+	padding: 10px;
+	margin-top: 15px;
+}
+
+.form-items:last-child {
+	text-align: center;
+	
+}
+
+.form-btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 35px;
+	color: #4f4e4e;
+}
+
+.form-btn:hover {
+	color: #0d9aaf;
+}
+
+#image-hidden {
+	max-width: 150px;
+	height: auto;
+	margin: 0 auto;
 }
 
 /* Footer section */
