@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.burger-back').click(function() {
+    $('.menu li').addClass('.menu-openned');
+  });
+
   $('#file-input').change(function() {
     readimg(this);
   });
